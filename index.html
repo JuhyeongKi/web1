@@ -3,6 +3,50 @@
 <head>
   <TITLE>WEB1 - Welcome</TITLE>
   <meta charset="utf-8">
+  <style>
+    body {
+      margin:0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+
+    ol {
+    border-right:1px solid gray;
+    width: 100px;
+    margin:0;
+    padding: 20px;
+    }
+  #grid {
+    display: grid;
+    grid-template-columns:150px 1fr;
+  }
+  #grid ol {
+    padding-left:33px;
+  }
+
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    ol {
+    border-right:none;
+  }
+    h1 {
+    border-bottom:none;
+  }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C75NDRC336"></script>
   <script>
@@ -14,21 +58,24 @@
   </script>
 </head>
 <body>
-  <h1><center><a href="index.html">WEB</a></Center></h1>
-  <hr></hr>
-  <ol>
-    <li><a href="1.html">Html</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    <li><a Href="https://blog.naver.com/kjjrhwlswn" target="_blank">Juice</a></li><br>
-  </ol>
-  <h2>WEB</h2>
-  <p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-  <p><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank" title="The World Wide Web (WWW)">The World Wide Web (WWW)</a> commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hypertext, and are accessible over the Internet.</p>
-  <img src="coding4.jpg" width="100%">
-  <P>The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-existed the Web in some form by over two decades and upon which technologies the Web is built.</P>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Html</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+      <li><a Href="https://blog.naver.com/kjjrhwlswn" target="_blank">Juice</a></li><br>
+    </ol>
+    <div id="article">
+      <h2>WEB</h2>
+      <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+      <p><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank" title="The World Wide Web (WWW)">The World Wide Web (WWW)</a> commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hypertext, and are accessible over the Internet.</p>
+      <img src="coding4.jpg" width="100%">
+      <P>The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-existed the Web in some form by over two decades and upon which technologies the Web is built.</P>
+    </div>
+  </div>
   <p>
     <div id="disqus_thread"></div>
     <script>
